@@ -1,0 +1,16 @@
+{
+  "compatibility_date": "2025-04-01",
+  "main": "src/index.ts",
+  "name": "qveat-backend",
+  "upload_source_maps": true,
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "qveat-db",
+      "database_id": "ecc58c61-d32a-4c02-8a3e-fb4fb79793b9"
+    }
+  ]
+}
