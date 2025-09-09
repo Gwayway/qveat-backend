@@ -1,0 +1,115 @@
+# Cloudflare Workers 特定文件
+.wrangler/
+  state/
+  tmp/
+  cache/
+*.dev.vars
+*.tmp.js
+*.wasm
+*.min.js
+
+# 依赖目录
+node_modules/
+jspm_packages/
+.webpack/
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+*.host
+
+# 覆盖率目录
+coverage/
+.nyc_output/
+*.lcov
+
+# 环境变量文件
+.env
+.env.local
+.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+.env.test
+
+# 构建输出
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# 缓存目录
+.cache/
+.parcel-cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.eslintcache
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# 测试相关
+jest-cache/
+jest-test-results/
+*.test.js
+*.test.js.map
+
+# TypeScript 编译输出
+*.tsbuildinfo
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# Wrangler 相关
+wrangler.toml.example
+wrangler.local.toml
+
+# 包管理器锁文件（可选，根据团队规范决定）
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+
+# 上传和下载目录
+uploads/
+downloads/
+
+# 文档文件（可选）
+*.doc
+*.docx
+*.pdf
+*.xls
+*.xlsx
