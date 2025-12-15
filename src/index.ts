@@ -9,6 +9,7 @@ import { DummyEndpoint } from "./endpoints/dummyEndpoint";
 const app = new Hono<{ Bindings: Env }>();
 
 app.onError((err, c) => {
+  console.error("Error:", err);
   if (err instanceof ApiException) {
     // If it's a Chanfana ApiException, let Chanfana handle the response
     return c.json(
