@@ -7,7 +7,11 @@ import { DummyEndpoint } from "./endpoints/dummyEndpoint";
 
 // Start a Hono app
 const app = new Hono<{ Bindings: Env }>();
+app.use(async (c, next) => {
+  console.log("Request:", c);
 
+  await next()
+})
 app.onError((err, c) => {
   console.error("Error:", err);
   if (err instanceof ApiException) {

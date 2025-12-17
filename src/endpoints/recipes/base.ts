@@ -48,7 +48,7 @@ export const recipeWithDetails = recipe.extend({
 // 创建菜谱的输入模型
 export const recipeCreateInput = recipe.pick({
   name: true,
-  slug: true,
+  // slug: true,
   description: true,
   prep_time: true,
   cook_time: true,
